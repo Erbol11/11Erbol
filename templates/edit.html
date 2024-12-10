@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <label for="">атты жаз</label>
+            <input type="text" name="name" id="" value="{{user.name}}">
+            <label for="">жашты жаз</label>
+            <input type="number" name="age" id="" value="{{user.age}}">
+            <input type="submit" value="Сактоо">
+        </form>
+    </div>
+    
+</body>
+</html>
